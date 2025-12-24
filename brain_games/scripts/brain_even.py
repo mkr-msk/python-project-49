@@ -1,4 +1,4 @@
-import random
+import secrets
 
 import prompt
 
@@ -24,7 +24,7 @@ def is_correct_answer(user_answer: str, correct_answer: str) -> bool:
 
 
 def play_round() -> bool:
-    number = random.randint(1, 100)
+    number = secrets.randbelow(100) + 1
     print(f"Question: {number}")
     user_answer = prompt.string("Your answer: ")
     return is_correct_answer(user_answer, correct_answer(number))
