@@ -10,3 +10,5 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=mkr-msk_python-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=mkr-msk_python-project-49)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mkr-msk_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=mkr-msk_python-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=mkr-msk_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=mkr-msk_python-project-49)
+
+### [Demo (asciinema)](https://asciinema.org/a/EW9akfiXSakLY6tjWUkn6kFlp)
