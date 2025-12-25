@@ -24,7 +24,7 @@ def play_round() -> bool:
     return is_correct_answer(
         user_answer, 
         correct_answer(number_1, number_2, operation)
-        )
+    )
 
 
 def brain_calc():
