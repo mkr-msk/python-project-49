@@ -4,6 +4,7 @@ from . import brain_calc, brain_even, brain_gcd, brain_prime, brain_progression
 
 
 def main():
+    print('Welcome to the Brain Games!')
     print("Please choose a game to play:")
     print("1 - Even Number Game")
     print("2 - Calculator Game")
