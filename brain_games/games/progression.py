@@ -1,7 +1,5 @@
 import secrets
 
-import prompt
-
 from ..cli import is_correct_answer
 
 
@@ -29,7 +27,7 @@ def play_round() -> bool:
     progression = generate_progression(start, step, length)
     question = create_question(progression, hidden_index)
     print(f"Question: {question}")
-    user_answer = prompt.string("Your answer: ")
+    user_answer = input("Your answer: ")
     return is_correct_answer(
         user_answer, 
         correct_answer(progression, hidden_index)
