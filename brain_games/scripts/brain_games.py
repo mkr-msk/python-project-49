@@ -1,9 +1,6 @@
-import brain_calc
-import brain_even
-import brain_gcd
-import brain_prime
-import brain_progression
 import prompt
+
+from . import brain_calc, brain_even, brain_gcd, brain_prime, brain_progression
 
 
 def main():
