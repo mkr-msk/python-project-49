@@ -1,10 +1,8 @@
-
-from brain_games.cli import engine, welcome_user
+from brain_games.cli import engine
 from brain_games.games.even import play_round
 
 
-def brain_even():
-    name = welcome_user()
+def brain_even(name: str = 'User'):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     engine(play_round, name)
 
