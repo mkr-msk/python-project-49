@@ -23,7 +23,7 @@ dev = [
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:brain_even"
-brain-calc = "brain_games.scripts.brain_even:brain_calc"
-brain-gcd = "brain_games.scripts.brain_even:brain_gcd"
-brain-prime = "brain_games.scripts.brain_even:brain_prime"
-brain-progression = "brain_games.scripts.brain_even:brain_progression"
+brain-calc = "brain_games.scripts.brain_calc:brain_calc"
+brain-gcd = "brain_games.scripts.brain_gcd:brain_gcd"
+brain-prime = "brain_games.scripts.brain_prime:brain_prime"
+brain-progression = "brain_games.scripts.brain_progression:brain_progression"
