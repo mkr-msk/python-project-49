@@ -2,7 +2,7 @@ import secrets
 
 import prompt
 
-from ..cli import engine, is_correct_answer, welcome_user
+from ..cli import is_correct_answer
 
 
 def generate_progression(start: int, step: int, length: int) -> list[int]:
@@ -34,9 +34,3 @@ def play_round() -> bool:
         user_answer, 
         correct_answer(progression, hidden_index)
     )
-
-
-def brain_progression():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-    engine(play_round, name)

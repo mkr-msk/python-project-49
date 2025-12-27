@@ -1,12 +1,9 @@
 import prompt
-
-from ..games import (
-    brain_calc,
-    brain_even,
-    brain_gcd,
-    brain_prime,
-    brain_progression,
-)
+from brain_calc import brain_calc
+from brain_even import brain_even
+from brain_gcd import brain_gcd
+from brain_prime import brain_prime
+from brain_progression import brain_progression
 
 
 def main():
@@ -19,15 +16,15 @@ def main():
     choice = prompt.string("Enter the number of your choice: ")
     match choice:
         case "1":
-            brain_even.brain_even()
+            brain_even()
         case "2":
-            brain_calc.brain_calc()
+            brain_calc()
         case "3":
-            brain_gcd.brain_gcd()
+            brain_gcd()
         case "4":
-            brain_progression.brain_progression()
+            brain_progression()
         case "5":
-            brain_prime.brain_prime()
+            brain_prime()
 
 
 if __name__ == '__main__':

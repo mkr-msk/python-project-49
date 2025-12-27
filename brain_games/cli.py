@@ -1,14 +1,14 @@
 import prompt
 
 
-def welcome_user() -> str:
+def welcome_user() -> str | None:
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     return name
 
 
-def is_correct_answer(user_answer: str, correct_answer: str) -> bool:
+def is_correct_answer(user_answer: str | None, correct_answer: str) -> bool:
     if user_answer == correct_answer:
         print("Correct!")
         return True

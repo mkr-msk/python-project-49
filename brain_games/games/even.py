@@ -2,7 +2,7 @@ import secrets
 
 import prompt
 
-from ..cli import engine, is_correct_answer, welcome_user
+from ..cli import is_correct_answer
 
 
 def correct_answer(number: int) -> str:
@@ -14,9 +14,3 @@ def play_round() -> bool:
     print(f"Question: {number}")
     user_answer = prompt.string("Your answer: ")
     return is_correct_answer(user_answer, correct_answer(number))
-
-
-def brain_even():
-    name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    engine(play_round, name)

@@ -2,7 +2,7 @@ import secrets
 
 import prompt
 
-from ..cli import engine, is_correct_answer, welcome_user
+from ..cli import is_correct_answer
 
 
 def is_prime(number):
@@ -23,9 +23,3 @@ def play_round() -> bool:
     print(f"Question: {number}")
     user_answer = prompt.string("Your answer: ")
     return is_correct_answer(user_answer, correct_answer(number))
-
-
-def brain_prime():
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    engine(play_round, name)

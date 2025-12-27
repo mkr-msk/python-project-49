@@ -2,7 +2,7 @@ import secrets
 
 import prompt
 
-from ..cli import engine, is_correct_answer, welcome_user
+from ..cli import is_correct_answer
 
 
 def gcd(number_1: int, number_2: int) -> int:
@@ -24,9 +24,3 @@ def play_round() -> bool:
         user_answer,
         correct_answer(number_1, number_2)
     )
-
-
-def brain_gcd():
-    name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    engine(play_round, name)

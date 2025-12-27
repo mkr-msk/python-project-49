@@ -2,10 +2,10 @@ import secrets
 
 import prompt
 
-from ..cli import engine, is_correct_answer, welcome_user
+from ..cli import is_correct_answer
 
 
-def correct_answer(number_1: int, number_2: int, operation: str) -> str:
+def correct_answer(number_1: int, number_2: int, operation: str):
     match operation:
         case "+":
             return str(number_1 + number_2)
@@ -23,11 +23,5 @@ def play_round() -> bool:
     user_answer = prompt.string("Your answer: ")
     return is_correct_answer(
         user_answer, 
-        correct_answer(number_1, number_2, operation)
+        correct_answer(number_1, number_2, operation)  # type: ignore
     )
-
-
-def brain_calc():
-    name = welcome_user()
-    print('What is the result of the expression?')
-    engine(play_round, name)
