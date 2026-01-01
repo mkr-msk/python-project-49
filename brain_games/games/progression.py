@@ -20,11 +20,14 @@ def correct_answer(progression: list[int], hidden_index: int) -> str:
 
 
 def play_round() -> bool:
-    start = secrets.randbelow(50) + 1
-    step = secrets.randbelow(10) + 1
-    length = 10
-    hidden_index = secrets.randbelow(length)
-    progression = generate_progression(start, step, length)
+    MAX_NUMBER_START = 50
+    MAX_NUMBER_STEP = 10
+    LENGTH = 10
+    
+    start = secrets.randbelow(MAX_NUMBER_START) + 1
+    step = secrets.randbelow(MAX_NUMBER_STEP) + 1
+    hidden_index = secrets.randbelow(LENGTH)
+    progression = generate_progression(start, step, LENGTH)
     question = create_question(progression, hidden_index)
     print(f"Question: {question}")
     user_answer = input("Your answer: ")

@@ -1,11 +1,11 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Brain Games"
+authors = "mkr"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "prompt>=0.4.1",
 ]
 
 [build-system]

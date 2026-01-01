@@ -11,8 +11,28 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mkr-msk_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=mkr-msk_python-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=mkr-msk_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=mkr-msk_python-project-49)
 
-### [Brain Even (asciinema)](https://asciinema.org/a/EW9akfiXSakLY6tjWUkn6kFlp)
-### [Brain Calc (asciinema)](https://asciinema.org/a/LKPGLrw7qGEArsf9FzzPd4WGI)
-### [Brain GCD (asciinema)](https://asciinema.org/a/GOYAtqTON5v20iU108OLHupqN)
-### [Brain Prime (asciinema)](https://asciinema.org/a/jtAeqQhXjb69RgWdlgS5m7WRJ)
-### [Brain Progression (asciinema)](https://asciinema.org/a/xKH6E8ZW44tksfEg91QOyyiXU)
+# Brain Games
+
+### Requirements
+- python >= 3.12
+
+### Installation
+```
+make install
+make build
+make package-install
+```
+### Running
+```
+brain-calc
+brain-even
+brain-gcd
+brain-prime
+brain-progression
+```
+
+#### [Brain Even (asciinema)](https://asciinema.org/a/EW9akfiXSakLY6tjWUkn6kFlp)
+#### [Brain Calc (asciinema)](https://asciinema.org/a/LKPGLrw7qGEArsf9FzzPd4WGI)
+#### [Brain GCD (asciinema)](https://asciinema.org/a/GOYAtqTON5v20iU108OLHupqN)
+#### [Brain Prime (asciinema)](https://asciinema.org/a/jtAeqQhXjb69RgWdlgS5m7WRJ)
+#### [Brain Progression (asciinema)](https://asciinema.org/a/xKH6E8ZW44tksfEg91QOyyiXU)

@@ -14,8 +14,9 @@ def correct_answer(number_1: int, number_2: int) -> str:
 
 
 def play_round() -> bool:
-    number_1 = secrets.randbelow(100) + 1
-    number_2 = secrets.randbelow(100) + 1
+    MAX_NUMBER = 100
+    number_1 = secrets.randbelow(MAX_NUMBER) + 1
+    number_2 = secrets.randbelow(MAX_NUMBER) + 1
     print(f"Question: {number_1} {number_2}")
     user_answer = input("Your answer: ")
     return is_correct_answer(
