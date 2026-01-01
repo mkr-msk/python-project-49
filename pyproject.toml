@@ -2,7 +2,7 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Brain Games"
-authors = "mkr"
+authors = [{name = "mkr"}]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
